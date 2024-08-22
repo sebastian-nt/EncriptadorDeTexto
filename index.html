@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/Logo.png" alt="logo_alura" >
+    </header>
+    <main>
+        <div class="main">
+            <div class="izquierdo">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="opciones">
+                    <img src="Imagenes/bi_exclamation-circle-fill.png" alt="signo_exlamacion">
+                    <span class="informacion">Ingresa solo texto en minúsculas y sin acentos</span>
+                    <div class="botones">
+                        <button class="boton_encriptar" onclick="botonEncriptar()"> Encriptar</button>
+                        <button class="boton_desencriptar"onclick= "botonDesencriptar()"> Desencriptar</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="derecho" class="derecho">
+                <img class="muneco" id="muneco" src="Imagenes/Candado.png" alt="muñeco">
+                <textarea id="mensajeFinal" class="mensaje_final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p class="info_derecha" id="infoDerecha">Ingresa el texto que quieras encriptar o desencriptar</p>
+                <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
